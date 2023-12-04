@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.py",  // Adjust this to the main file of your Flask app
+      "src": "app.py", 
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/heatmap",
-      "dest": "app.py"  // Adjust this to the main file of your Flask app
+      "dest": "app.py"  
     },
     {
       "src": "/predict_aqi",
-      "dest": "app.py"  // Adjust this to the main file of your Flask app
+      "dest": "app.py"  
     },
     {
       "src": "/(.*)",
-      "dest": "app.py"  // Adjust this to the main file of your Flask app
+      "dest": "app.py" 
     }
   ],
   "env": {
